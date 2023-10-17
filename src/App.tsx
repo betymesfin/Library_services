@@ -2,15 +2,16 @@ import React from 'react';
 
 import './App.css';
 import { Navbar } from './Layouts/NavbarAndFooter/Navbarcomponent';
-import { ExploreTopBooks } from './Layouts/HomePage/ExploreTopBooks';
+import { HomePage } from './Layouts/HomePage/HomePage';
+import { Footer } from './Layouts/NavbarAndFooter/Footer';
 
-function App() {
+export const App = () => {
   return (
     <div>
       <Navbar/>
-      <ExploreTopBooks/>
+      <HomePage/>
+      <Footer/>
     </div>
   );
 }
 
-export default App;
